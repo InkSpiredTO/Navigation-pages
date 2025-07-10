@@ -11,11 +11,21 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                Text("This is the root view! 🌳")
-                NavigationLink(destination: SecondView()) {
-                    Text("Click me!")
-                }
-                
+                Text("Welcome Home!!!!!!!")
+                    .toolbar {
+                        
+                        NavigationLink(destination: SecondView()) {
+                            Text("About")
+                        }
+                        
+                        NavigationLink(destination: Contact()) {
+                            Text("Contact")
+                        }
+                        
+                        NavigationLink(destination: HelpView()) {
+                            Text("Help")
+                        }
+                    }
             
             }
         }
